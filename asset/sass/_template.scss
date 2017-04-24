@@ -1,3 +1,56 @@
-.test {
-  color: #EEEEEE;
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  .background {
+    background-image: url("../images/background5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    min-height: 30.5em;
+
+
+    .logo {
+      text-align: center;
+      color: $white;
+      height: 80px;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .menu {
+      ul {
+        list-style: none;
+        float: right;
+        padding: 20px;
+        margin: 0;
+
+        li {
+          display: inline-block;
+          margin: 0 10px;
+          font-size: 0.9rem;
+          padding: 5px 0;
+
+          &:hover,
+          &:focus,
+          &.active {
+            border-bottom: 3px solid  $red;
+          }
+
+          a {
+            text-transform: uppercase;
+            color: $white;
+
+            &:hover,
+            &:focus {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }

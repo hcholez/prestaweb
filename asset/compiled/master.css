@@ -8754,5 +8754,44 @@ a.text-danger:focus, a.text-danger:hover {
   clip: auto; }
 
 /* line 1, asset/sass/_template.scss */
-.test {
-  color: #EEEEEE; }
+body {
+  font-family: 'Open Sans', sans-serif; }
+  /* line 4, asset/sass/_template.scss */
+  body .background {
+    background-image: url("../images/background5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    min-height: 30.5em; }
+    /* line 14, asset/sass/_template.scss */
+    body .background .logo {
+      text-align: center;
+      color: #FFFFFF;
+      height: 80px; }
+      /* line 19, asset/sass/_template.scss */
+      body .background .logo img {
+        height: 100%; }
+    /* line 25, asset/sass/_template.scss */
+    body .background .menu ul {
+      list-style: none;
+      float: right;
+      padding: 20px;
+      margin: 0; }
+      /* line 31, asset/sass/_template.scss */
+      body .background .menu ul li {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 0.9rem;
+        padding: 5px 0; }
+        /* line 37, asset/sass/_template.scss */
+        body .background .menu ul li:hover, body .background .menu ul li:focus, body .background .menu ul li.active {
+          border-bottom: 3px solid #ea6153; }
+        /* line 43, asset/sass/_template.scss */
+        body .background .menu ul li a {
+          text-transform: uppercase;
+          color: #FFFFFF; }
+          /* line 47, asset/sass/_template.scss */
+          body .background .menu ul li a:hover, body .background .menu ul li a:focus {
+            text-decoration: none; }
