@@ -17,15 +17,17 @@
           <div class="menu">
             <div class="row">
               <div class="logo col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <img src="asset/images/logo.png" alt="PresWeb">
+                <a href="#">
+                  <img src="asset/images/logo.png" alt="PresWeb">
+                </a>
               </div>
               <div class="menu col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <ul>
                   <li class="active">
-                    <a href="">Lien menu</a>
+                    <a href="#services" onclick="$('html, body').animate({ scrollTop: $('#services').offset().top +1 }, 600)">Nos services</a>
                   </li>
                   <li>
-                    <a href="#">Lien menu</a>
+                    <a href="#competences" onclick="$('html, body').animate({ scrollTop: $('#competences').offset().top +1 }, 600)">Nos compétences</a>
                   </li>
                   <li>
                     <a href="#">Lien menu</a>
@@ -49,8 +51,68 @@
 
     <div class="container">
 
+      <div id="services" class="row services">
+        <h2>Bienvenue chez PrestaWeb !</h2>
+
+        <div class="row">
+          <div class="description col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 col-xl-offset-12">
+            <p>Une petites description pour faire plaisir mais pas trop non plus faut leur donner envie d'en voir plus quand même</p>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="details col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="more-detail">
+              <span class="picto">
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+              </span>
+              <p>
+                Tu fais ta super présentation de la mort qui tue tout ici. Tu peux dire que tu es un homme <strong>MERVEILLEUX</strong> que tu es le meilleur dans ton domaine
+                et que ta boîte c'est la meilleure ! Que tu fais un super boulot toujours très propre et professionnel.
+              </p>
+              <a href="" title="Voir plus">Plus de détail <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="details col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="more-detail">
+              <span class="picto">
+                <i class="fa fa-question" aria-hidden="true"></i>
+              </span>
+              <p>
+                Tu fais ta super présentation de la mort qui tue tout ici. Tu peux dire que tu es un homme <strong>MERVEILLEUX</strong> que tu es le meilleur dans ton domaine
+                et que ta boîte c'est la meilleure ! Que tu fais un super boulot toujours très propre et professionnel.
+              </p>
+              <a href="" title="Voir plus">Plus de détail <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+
+          </div>
+
+          <div class="details col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="more-detail">
+              <span class="picto">
+                <i class="fa fa-cloud" aria-hidden="true"></i>
+              </span>
+              <p>
+                Tu fais ta super présentation de la mort qui tue tout ici. Tu peux dire que tu es un homme <strong>MERVEILLEUX</strong> que tu es le meilleur dans ton domaine
+                et que ta boîte c'est la meilleure ! Que tu fais un super boulot toujours très propre et professionnel.
+              </p>
+              <a href="" title="Voir plus">Plus de détail <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="competences" class="competences block-shadow row">
+        <h2>Nos compétences</h2>
+
+      </div>
+
       <!-- PRESENTATION TDUBUFFET-->
-      <div class="presentation block-shadow row">
+      <!--<div class="presentation block-shadow row">
         <div class="image-presentation col-lg-3 col-md-3 col-sm-12 col-xs-12">
           <img src="asset/images/lol.JPG" alt="Thibault DUBUFFET">
         </div>
@@ -68,7 +130,7 @@
             Tu peux aussi dire que tu as une femme <strong>EXTRAORDINAIRE</strong> (et qu'elle suce pas trop mal !) !
           </p>
         </div>
-      </div>
+      </div>-->
 
     </div>
 
@@ -172,6 +234,7 @@
     </footer>
 
 
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
   </body>
 
 </html>

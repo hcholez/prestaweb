@@ -1,4 +1,8 @@
 body {
+
+  /*
+  * HEADER
+  */
   .background {
     background-image: url("../images/background5.jpg");
     background-size: cover;
@@ -35,7 +39,7 @@ body {
             &:hover,
             &:focus,
             &.active {
-              border-bottom: 3px solid  $red;
+              border-bottom: 3px solid  $light-blue;
             }
 
             a {
@@ -58,6 +62,94 @@ body {
     }
   }
 
+
+  /*
+  * SERVICES
+  */
+  .services {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    h2 {
+      color: $dark-blue;
+      font-weight: bold;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .description {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .details {
+      &:hover {
+        .more-detail {
+          background-color: $grey-smooth;
+
+          .picto {
+            background-color: $light-blue;
+            color: $white;
+          }
+        }
+      }
+
+      .more-detail {
+        padding: 15px;
+        background-color: $white;
+
+        .picto {
+          border-radius: 50%;
+          height: 4em;
+          width: 4em;
+          line-height: 4em;
+          display: block;
+          text-align: center;
+          margin: -35px auto 10px auto;
+          background-color: $white;
+          color: $light-blue;
+          transition: all 0.3s ease-out;
+          display: table;
+
+          i {
+            font-size: 2rem;
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        a {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+
+
+  /*
+  * COMPETENCES
+  */
+  .competences {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: $white;
+
+    h2 {
+      color: $blue;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+
+  /*
+  * FOOTER
+  */
   footer {
     background-color: $blue;
     color: $link-footer;
