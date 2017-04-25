@@ -77,11 +77,6 @@ body {
       text-align: center;
     }
 
-    .description {
-      margin-top: 20px;
-      margin-bottom: 30px;
-    }
-
     .details {
       &:hover {
         .more-detail {
@@ -154,6 +149,11 @@ body {
     background-color: $blue;
     color: $link-footer;
     padding-top: 20px;
+
+    hr {
+      border-top: 2px solid $white;
+      margin: 10px 0;
+    }
 
     h5 {
       color: $white;
@@ -246,5 +246,18 @@ body {
     .text-presentation {
       padding-top: 20px;
     }
+  }
+}
+
+
+/*
+* COMMUN
+*/
+.services,
+.competences {
+  .description {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
   }
 }

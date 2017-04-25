@@ -8822,22 +8822,18 @@ body {
       font-weight: bold;
       font-size: 2rem;
       text-align: center; }
-    /* line 80, asset/sass/_template.scss */
-    body .services .description {
-      margin-top: 20px;
-      margin-bottom: 30px; }
-    /* line 87, asset/sass/_template.scss */
+    /* line 82, asset/sass/_template.scss */
     body .services .details:hover .more-detail {
       background-color: #EFEFEF; }
-      /* line 90, asset/sass/_template.scss */
+      /* line 85, asset/sass/_template.scss */
       body .services .details:hover .more-detail .picto {
         background-color: #4aa3df;
         color: #FFFFFF; }
-    /* line 97, asset/sass/_template.scss */
+    /* line 92, asset/sass/_template.scss */
     body .services .details .more-detail {
       padding: 15px;
       background-color: #FFFFFF; }
-      /* line 101, asset/sass/_template.scss */
+      /* line 96, asset/sass/_template.scss */
       body .services .details .more-detail .picto {
         border-radius: 50%;
         height: 4em;
@@ -8850,33 +8846,37 @@ body {
         color: #4aa3df;
         transition: all 0.3s ease-out;
         display: table; }
-        /* line 114, asset/sass/_template.scss */
+        /* line 109, asset/sass/_template.scss */
         body .services .details .more-detail .picto i {
           font-size: 2rem;
           display: table-cell;
           vertical-align: middle; }
-      /* line 121, asset/sass/_template.scss */
+      /* line 116, asset/sass/_template.scss */
       body .services .details .more-detail p {
         font-size: 0.9rem; }
-      /* line 125, asset/sass/_template.scss */
+      /* line 120, asset/sass/_template.scss */
       body .services .details .more-detail a {
         color: #4aa3df; }
-  /* line 136, asset/sass/_template.scss */
+  /* line 131, asset/sass/_template.scss */
   body .competences {
     margin-top: 60px;
     margin-bottom: 60px;
     background-color: #FFFFFF; }
-    /* line 141, asset/sass/_template.scss */
+    /* line 136, asset/sass/_template.scss */
     body .competences h2 {
       color: #3d566e;
       text-align: center;
       padding-top: 20px;
       padding-bottom: 20px; }
-  /* line 153, asset/sass/_template.scss */
+  /* line 148, asset/sass/_template.scss */
   body footer {
     background-color: #3d566e;
     color: #cbd0d3;
     padding-top: 20px; }
+    /* line 153, asset/sass/_template.scss */
+    body footer hr {
+      border-top: 2px solid #FFFFFF;
+      margin: 10px 0; }
     /* line 158, asset/sass/_template.scss */
     body footer h5 {
       color: #FFFFFF; }
@@ -8947,6 +8947,16 @@ body {
     body .presentation .text-presentation {
       padding-top: 20px; }
 
+/*
+* COMMUN
+*/
+/* line 258, asset/sass/_template.scss */
+.services .description,
+.competences .description {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center; }
+
 /* line 1, asset/sass/base.scss */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -8962,3 +8972,69 @@ body {
   /* line 18, asset/sass/base.scss */
   body ul {
     list-style: none; }
+  /* line 22, asset/sass/base.scss */
+  body hr {
+    margin-top: 0;
+    border-top: 3px solid #3d566e;
+    width: 10%; }
+  /* line 28, asset/sass/base.scss */
+  body .progress-bar {
+    display: block;
+    position: relative;
+    height: 45px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px; }
+    /* line 37, asset/sass/base.scss */
+    body .progress-bar h2 {
+      padding: 0px;
+      color: #FFFFFF;
+      font-size: 0.9rem;
+      line-height: 41px; }
+    /* line 44, asset/sass/base.scss */
+    body .progress-bar .title-progress {
+      position: absolute;
+      top: 0;
+      left: 10px; }
+  /* line 51, asset/sass/base.scss */
+  body .progress {
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #EFEFEF;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 40px;
+    border-radius: 3px; }
+  /* line 62, asset/sass/base.scss */
+  body .progressbar {
+    height: 41px;
+    font-size: 0.9rem; }
+  /* line 67, asset/sass/base.scss */
+  body .progressbar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #4aa3df;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: width; }
+    /* line 80, asset/sass/base.scss */
+    body .progressbar p {
+      float: right;
+      margin-right: 10px;
+      font-size: 0.9rem;
+      color: #FFFFFF;
+      margin-bottom: 0;
+      line-height: 41px; }
+  /* line 90, asset/sass/base.scss */
+  body .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
