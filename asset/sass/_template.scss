@@ -139,6 +139,16 @@ body {
       padding-top: 20px;
       padding-bottom: 20px;
     }
+
+    .bar {
+      &:nth-child(even) {
+        padding-left: 0;
+      }
+
+      &:nth-child(odd) {
+        padding-right: 0;
+      }
+    }
   }
 
 

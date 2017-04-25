@@ -8868,89 +8868,95 @@ body {
       text-align: center;
       padding-top: 20px;
       padding-bottom: 20px; }
-  /* line 148, asset/sass/_template.scss */
+    /* line 144, asset/sass/_template.scss */
+    body .competences .bar:nth-child(even) {
+      padding-left: 0; }
+    /* line 148, asset/sass/_template.scss */
+    body .competences .bar:nth-child(odd) {
+      padding-right: 0; }
+  /* line 158, asset/sass/_template.scss */
   body footer {
     background-color: #3d566e;
     color: #cbd0d3;
     padding-top: 20px; }
-    /* line 153, asset/sass/_template.scss */
+    /* line 163, asset/sass/_template.scss */
     body footer hr {
       border-top: 2px solid #FFFFFF;
       margin: 10px 0; }
-    /* line 158, asset/sass/_template.scss */
+    /* line 168, asset/sass/_template.scss */
     body footer h5 {
       color: #FFFFFF; }
-    /* line 162, asset/sass/_template.scss */
+    /* line 172, asset/sass/_template.scss */
     body footer .footer-entrie {
       font-size: 0.9rem; }
-      /* line 165, asset/sass/_template.scss */
+      /* line 175, asset/sass/_template.scss */
       body footer .footer-entrie .list-link {
         padding-left: 0; }
-        /* line 168, asset/sass/_template.scss */
+        /* line 178, asset/sass/_template.scss */
         body footer .footer-entrie .list-link a {
           color: #cbd0d3; }
-      /* line 175, asset/sass/_template.scss */
+      /* line 185, asset/sass/_template.scss */
       body footer .footer-entrie .phone a,
       body footer .footer-entrie .mail a {
         color: #cbd0d3;
         margin-left: 5px; }
-      /* line 182, asset/sass/_template.scss */
+      /* line 192, asset/sass/_template.scss */
       body footer .footer-entrie .address span {
         margin-left: 5px; }
-    /* line 189, asset/sass/_template.scss */
+    /* line 199, asset/sass/_template.scss */
     body footer .network input {
       border: 1px solid #2c3e50;
       background-color: #2c3e50;
       color: #FFFFFF;
       padding: 5px 0 5px 10px;
       width: 75%; }
-    /* line 197, asset/sass/_template.scss */
+    /* line 207, asset/sass/_template.scss */
     body footer .network .send {
       border: 0 none;
       padding: 5px;
       background-color: #4aa3df;
       color: #FFFFFF;
       width: 25%; }
-    /* line 205, asset/sass/_template.scss */
+    /* line 215, asset/sass/_template.scss */
     body footer .network .list-network {
       padding-left: 0;
       margin-top: 20px; }
-      /* line 209, asset/sass/_template.scss */
+      /* line 219, asset/sass/_template.scss */
       body footer .network .list-network li {
         display: inline-block;
         margin: 0 5px;
         font-size: 2rem; }
-        /* line 214, asset/sass/_template.scss */
+        /* line 224, asset/sass/_template.scss */
         body footer .network .list-network li a {
           color: #FFFFFF; }
-    /* line 221, asset/sass/_template.scss */
+    /* line 231, asset/sass/_template.scss */
     body footer.copyright {
       background-color: #2c3e50;
       text-align: center;
       color: #cbd0d3;
       padding: 10px;
       font-size: 0.8rem; }
-      /* line 228, asset/sass/_template.scss */
+      /* line 238, asset/sass/_template.scss */
       body footer.copyright p {
         margin: 0; }
-  /* line 234, asset/sass/_template.scss */
+  /* line 244, asset/sass/_template.scss */
   body .presentation {
     margin-top: -50px; }
-    /* line 237, asset/sass/_template.scss */
+    /* line 247, asset/sass/_template.scss */
     body .presentation .image-presentation {
       padding: 0; }
-      /* line 240, asset/sass/_template.scss */
+      /* line 250, asset/sass/_template.scss */
       body .presentation .image-presentation img {
         width: 100%;
         height: auto; }
-    /* line 246, asset/sass/_template.scss */
+    /* line 256, asset/sass/_template.scss */
     body .presentation .text-presentation {
       padding-top: 20px; }
 
 /*
 * COMMUN
 */
-/* line 258, asset/sass/_template.scss */
+/* line 268, asset/sass/_template.scss */
 .services .description,
 .competences .description {
   margin-top: 20px;
