@@ -8768,6 +8768,9 @@ body {
   * EQUIPE
   */
   /*
+  * CONTACT
+  */
+  /*
   * FOOTER
   */ }
   /* line 6, asset/sass/_template.scss */
@@ -8941,124 +8944,176 @@ body {
       margin-right: 15px; }
       /* line 227, asset/sass/_template.scss */
       body .equipe .items .item {
-        margin: 30px 0; }
-        /* line 232, asset/sass/_template.scss */
+        margin: 30px 0;
+        text-align: center;
+        overflow: hidden; }
+        /* line 234, asset/sass/_template.scss */
         body .equipe .items .item:hover .image, body .equipe .items .item:focus .image {
           border-color: #4aa3df; }
-        /* line 237, asset/sass/_template.scss */
+        /* line 239, asset/sass/_template.scss */
         body .equipe .items .item:hover .social a, body .equipe .items .item:focus .social a {
           color: #4aa3df; }
-        /* line 243, asset/sass/_template.scss */
+        /* line 245, asset/sass/_template.scss */
         body .equipe .items .item .image {
           width: 15em;
           height: 15em;
           border-radius: 5px;
           overflow: hidden;
           border: 1px solid #EFEFEF;
-          margin-bottom: 20px; }
-          /* line 251, asset/sass/_template.scss */
+          margin: 0 auto 20px auto; }
+          /* line 253, asset/sass/_template.scss */
           body .equipe .items .item .image img {
             width: 100%;
             height: auto; }
-        /* line 257, asset/sass/_template.scss */
+        /* line 259, asset/sass/_template.scss */
         body .equipe .items .item .name {
           text-transform: uppercase;
           font-size: 0.9rem;
           font-weight: bold; }
-        /* line 263, asset/sass/_template.scss */
+        /* line 265, asset/sass/_template.scss */
         body .equipe .items .item .job {
           color: #8c9899;
           font-size: 0.9rem; }
-        /* line 269, asset/sass/_template.scss */
+        /* line 271, asset/sass/_template.scss */
         body .equipe .items .item .social a {
           color: #8c9899;
           padding: 5px;
           font-size: 1.1rem; }
-  /* line 283, asset/sass/_template.scss */
+  /* line 285, asset/sass/_template.scss */
+  body .contact {
+    margin-bottom: 60px; }
+    /* line 288, asset/sass/_template.scss */
+    body .contact p {
+      font-effect: 0.9rem; }
+    /* line 293, asset/sass/_template.scss */
+    body .contact .form-group .control-label,
+    body .contact .form-group .form-control {
+      height: 40px; }
+    /* line 298, asset/sass/_template.scss */
+    body .contact .form-group #message {
+      height: 150px; }
+    /* line 302, asset/sass/_template.scss */
+    body .contact .form-group.btn-send {
+      text-align: right; }
+      /* line 305, asset/sass/_template.scss */
+      body .contact .form-group.btn-send .btn-success {
+        margin-bottom: 30px;
+        background-color: #3d566e;
+        border-color: #3d566e; }
+        /* line 310, asset/sass/_template.scss */
+        body .contact .form-group.btn-send .btn-success:hover, body .contact .form-group.btn-send .btn-success:focus {
+          background-color: #4aa3df;
+          border-color: #4aa3df; }
+  /* line 325, asset/sass/_template.scss */
   body footer {
     background-color: #3d566e;
     color: #cbd0d3;
     padding-top: 20px; }
-    /* line 288, asset/sass/_template.scss */
+    /* line 330, asset/sass/_template.scss */
     body footer hr {
       border-top: 2px solid #FFFFFF;
       margin: 10px 0; }
-    /* line 293, asset/sass/_template.scss */
+    /* line 335, asset/sass/_template.scss */
     body footer h5 {
       color: #FFFFFF; }
-    /* line 297, asset/sass/_template.scss */
+    /* line 339, asset/sass/_template.scss */
     body footer .footer-entrie {
       font-size: 0.9rem; }
-      /* line 300, asset/sass/_template.scss */
+      /* line 342, asset/sass/_template.scss */
       body footer .footer-entrie .list-link {
         padding-left: 0; }
-        /* line 303, asset/sass/_template.scss */
+        /* line 345, asset/sass/_template.scss */
         body footer .footer-entrie .list-link a {
           color: #cbd0d3; }
-      /* line 310, asset/sass/_template.scss */
+      /* line 352, asset/sass/_template.scss */
       body footer .footer-entrie .phone a,
       body footer .footer-entrie .mail a {
         color: #cbd0d3;
         margin-left: 5px; }
-      /* line 317, asset/sass/_template.scss */
+      /* line 359, asset/sass/_template.scss */
       body footer .footer-entrie .address span {
         margin-left: 5px; }
-    /* line 324, asset/sass/_template.scss */
+    /* line 366, asset/sass/_template.scss */
     body footer .network input {
       border: 1px solid #2c3e50;
       background-color: #2c3e50;
       color: #FFFFFF;
       padding: 5px 0 5px 10px;
       width: 75%; }
-    /* line 332, asset/sass/_template.scss */
+    /* line 374, asset/sass/_template.scss */
     body footer .network .send {
       border: 0 none;
       padding: 5px;
       background-color: #4aa3df;
       color: #FFFFFF;
       width: 25%; }
-    /* line 340, asset/sass/_template.scss */
+    /* line 382, asset/sass/_template.scss */
     body footer .network .list-network {
       padding-left: 0;
       margin-top: 20px; }
-      /* line 344, asset/sass/_template.scss */
+      /* line 386, asset/sass/_template.scss */
       body footer .network .list-network li {
         display: inline-block;
         margin: 0 5px;
         font-size: 2rem; }
-        /* line 349, asset/sass/_template.scss */
+        /* line 391, asset/sass/_template.scss */
         body footer .network .list-network li a {
           color: #FFFFFF; }
-    /* line 356, asset/sass/_template.scss */
+    /* line 398, asset/sass/_template.scss */
     body footer.copyright {
       background-color: #2c3e50;
       text-align: center;
       color: #cbd0d3;
       padding: 10px;
       font-size: 0.8rem; }
-      /* line 363, asset/sass/_template.scss */
+      /* line 405, asset/sass/_template.scss */
       body footer.copyright p {
         margin: 0; }
 
 /*
 * COMMUN
 */
-/* line 377, asset/sass/_template.scss */
+/* line 420, asset/sass/_template.scss */
 .equipe .description,
+.contact .description,
 .services .description,
 .competences .description {
   margin-top: 20px;
   margin-bottom: 30px;
   text-align: center; }
 
-/* line 383, asset/sass/_template.scss */
+/* line 426, asset/sass/_template.scss */
 .equipe h2,
+.contact h2,
 .services h2,
 .competences h2 {
   color: #3d566e;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px; }
+
+@media screen and (max-width: 380px) {
+  /* line 3, asset/sass/_responsive.scss */
+  .container {
+    width: 95%; }
+  /* line 10, asset/sass/_responsive.scss */
+  body .competences .description p {
+    padding: 10px; }
+  /* line 16, asset/sass/_responsive.scss */
+  body .competences .bar:nth-child(odd) {
+    padding-right: 15px; }
+  /* line 20, asset/sass/_responsive.scss */
+  body .competences .bar:nth-child(even) {
+    padding-left: 15px; }
+  /* line 27, asset/sass/_responsive.scss */
+  body .services .details {
+    margin: 50px 0; }
+  /* line 34, asset/sass/_responsive.scss */
+  body footer .network input {
+    width: 100%; }
+  /* line 38, asset/sass/_responsive.scss */
+  body footer .network .send {
+    width: 100%; } }
 
 /* line 1, asset/sass/base.scss */
 body {

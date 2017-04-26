@@ -226,6 +226,8 @@ body {
 
       .item {
         margin: 30px 0;
+        text-align: center;
+        overflow: hidden;
 
         &:hover,
         &:focus {
@@ -246,7 +248,7 @@ body {
           border-radius: 5px;
           overflow: hidden;
           border: 1px solid $grey-smooth;
-          margin-bottom: 20px;
+          margin: 0 auto 20px auto;
 
           img {
             width: 100%;
@@ -274,6 +276,46 @@ body {
         }
       }
     }
+  }
+
+
+  /*
+  * CONTACT
+  */
+  .contact {
+    margin-bottom: 60px;
+
+    p {
+      font-effect: 0.9rem;
+    }
+
+    .form-group {
+      .control-label,
+      .form-control {
+        height: 40px;
+      }
+
+      #message {
+        height: 150px;
+      }
+
+      &.btn-send {
+        text-align: right;
+
+        .btn-success {
+          margin-bottom: 30px;
+          background-color: $blue;
+          border-color: $blue;
+
+          &:hover,
+          &:focus {
+            background-color: $light-blue;
+            border-color: $light-blue;
+          }
+        }
+      }
+    }
+
   }
 
 
@@ -372,6 +414,7 @@ body {
 * COMMUN
 */
 .equipe,
+.contact,
 .services,
 .competences {
   .description {

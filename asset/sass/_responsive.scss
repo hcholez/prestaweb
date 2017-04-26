@@ -1,5 +1,47 @@
 @media screen and (max-width: $mobile) {
 
+  .container {
+    width: 95%;
+  }
+
+  body {
+    .competences {
+      .description {
+        p {
+          padding: 10px;
+        }
+      }
+
+      .bar {
+        &:nth-child(odd) {
+          padding-right: 15px;
+        }
+
+        &:nth-child(even) {
+          padding-left: 15px;
+        }
+      }
+    }
+
+    .services {
+      .details {
+        margin: 50px 0;
+      }
+    }
+
+    footer {
+      .network {
+        input {
+          width: 100%;
+        }
+
+        .send {
+          width: 100%;
+        }
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: $tablet) {
