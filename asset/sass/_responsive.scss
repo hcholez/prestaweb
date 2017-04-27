@@ -1,14 +1,75 @@
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $tablet) {
 
   .container {
-    width: 95%;
+    width: 100%;
   }
 
   body {
+    .equipe {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .items {
+        margin: 0 !important;
+
+        .item {
+          padding: 0 !important;
+
+          .image {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+
+    .contact {
+      .formulaire {
+        label,
+        input {
+          width: 100% !important;
+        }
+
+        label {
+          text-align: center !important;
+          padding: 0 !important;
+        }
+
+        #message {
+          width: 100%;
+        }
+      }
+    }
+
+    .background {
+      height: 400px !important;
+
+      .slogan {
+        padding-top: 110px !important;
+      }
+    }
+
     .competences {
       .description {
         p {
           padding: 10px;
+        }
+      }
+
+      .progress-bar {
+        margin: 0 0 30px 0 !important;
+
+        .title-progress {
+          h2 {
+            font-size: 0.6rem !important;
+            line-height: 36px !important;
+          }
+        }
+
+        .progressbar {
+          p {
+            font-size: 0.6rem;
+            line-height: 36px !important;
+          }
         }
       }
 
@@ -40,10 +101,71 @@
         }
       }
     }
+
+    .menu-mobile {
+      display: block !important;
+      text-align: center;
+
+      &.fixed {
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: $white;
+        z-index: 999;
+
+        .burger-menu {
+          color: $blue !important;
+        }
+      }
+
+      .logo {
+        height: 60px !important;
+        position: relative;
+
+        .burger-menu {
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: $white;
+          background-color: transparent;
+          border: 0 none;
+          font-size: 1.5rem;
+        }
+
+        .link-menu {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 60px;
+          right: 0;
+          background-color: $blue;
+          display: none;
+
+          ul {
+            padding-left: 0;
+            margin-bottom: 0;
+
+            li {
+              padding: 10px;
+              border-bottom: 1px solid  $light-blue;
+
+              a {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .menu {
+      display: none;
+    }
+
+    h2 {
+      font-size: 2rem !important;
+    }
   }
-
-}
-
-@media screen and (max-width: $tablet) {
 
 }

@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="asset/compiled/master.css">
     <title>PrestaWeb</title>
   </head>
@@ -11,37 +13,69 @@
     <!-- HEADER -->
     <header>
       <div class="background">
-        <div class="container">
+        <div class="override-shadow">
 
           <!-- MENU -->
           <div class="menu">
-            <div class="row">
-              <div class="logo col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <a href="#">
-                  <img src="asset/images/logo.png" alt="PresWeb">
-                </a>
-              </div>
-              <div class="menu col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                <ul>
-                  <li class="active">
-                    <a href="#services" onclick="$('html, body').animate({ scrollTop: $('#services').offset().top +1 }, 600)">Nos services</a>
-                  </li>
-                  <li>
-                    <a href="#competences" onclick="$('html, body').animate({ scrollTop: $('#competences').offset().top +1 }, 600)">Nos compétences</a>
-                  </li>
-                  <li>
-                    <a href="#equipe" onclick="$('html, body').animate({ scrollTop: $('#equipe').offset().top +1 }, 600)">Notre équipe</a>
-                  </li>
-                  <li>
-                    <a href="#contact" onclick="$('html, body').animate({ scrollTop: $('#contact').offset().top +1 }, 600)">Nous contacter</a>
-                  </li>
-                </ul>
+            <div class="container">
+              <div class="row">
+                <div class="logo col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                  <a href="#">
+                    <img src="asset/images/logo.png" alt="PresWeb">
+                  </a>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                  <ul>
+                    <li id="active-services" class="active">
+                      <a href="#services" onclick="$('html, body').animate({ scrollTop: $('#services').offset().top +1 }, 600)">Nos services</a>
+                    </li>
+                    <li id="active-competences">
+                      <a href="#competences" onclick="$('html, body').animate({ scrollTop: $('#competences').offset().top +1 }, 600)">Nos compétences</a>
+                    </li>
+                    <li id="active-equipe">
+                      <a href="#equipe" onclick="$('html, body').animate({ scrollTop: $('#equipe').offset().top +1 }, 600)">Notre équipe</a>
+                    </li>
+                    <li id="active-contact">
+                      <a href="#contact" onclick="$('html, body').animate({ scrollTop: $('#contact').offset().top +1 }, 600)">Nous contacter</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
+          <div class="menu-mobile container">
+            <div class="row">
+              <div class="logo col-xs-12 col-sm-12">
+                <button class="burger-menu" type="button">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="link-menu">
+                  <ul>
+                    <li>
+                      <a href="#services" onclick="$('html, body').animate({ scrollTop: $('#services').offset().top +1 }, 600)">Nos services</a>
+                    </li>
+                    <li>
+                      <a href="#competences" onclick="$('html, body').animate({ scrollTop: $('#competences').offset().top +1 }, 600)">Nos compétences</a>
+                    </li>
+                    <li>
+                      <a href="#equipe" onclick="$('html, body').animate({ scrollTop: $('#equipe').offset().top +1 }, 600)">Notre équipe</a>
+                    </li>
+                    <li>
+                      <a href="#contact" onclick="$('html, body').animate({ scrollTop: $('#contact').offset().top +1 }, 600)">Nous contacter</a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#">
+                  <img src="asset/images/logo.png" alt="PresWeb">
+                </a>
+              </div>
+            </div>
+
+          </div>
+
           <!-- SLOGAN -->
-          <div class="slogan row">
+          <div class="slogan">
             <h1>Dubuffet président !</h1>
           </div>
         </div>
@@ -52,7 +86,7 @@
     <div class="container">
 
       <!-- SERVICES -->
-      <div id="services" class="services">
+      <div id="services" class="services block-shadow">
         <h2>Bienvenue chez PrestaWeb !</h2>
 
         <div class="row">
@@ -87,7 +121,6 @@
               </p>
               <a href="" title="Voir plus">Plus de détail <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             </div>
-
           </div>
 
           <div class="details col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -106,6 +139,7 @@
         </div>
 
       </div>
+
 
       <!-- COMPETENCES -->
       <div id="competences" class="competences block-shadow">
@@ -305,58 +339,57 @@
           </div>
         </div>
 
-        <form class="form-horizontal" method="post" action="envoie.php">
-          <fieldset>
-            <!-- Text input-->
-            <div class="row">
-              <div class="form-group">
-                <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 control-label" for="name">Nom / Prénom</label>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <input id="name" name="name" placeholder="Nom / Prénom" class="form-control input-md" required="" type="text">
-                </div>
-              </div>
-            </div>
+        <form action="" class="formulaire">
 
-            <!-- Text input-->
-            <div class="row">
-              <div class="form-group">
-                <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 control-label" for="email">Email</label>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <input id="email" name="email" placeholder="Email" class="form-control input-md" type="text">
-                </div>
+          <!-- Nom et prénom -->
+          <div class="row">
+            <div class="form-group">
+              <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 col-xs-12">
+                <label for="name">Nom et prénom</label>
+                <input type="text" id="name" placeholder="Nom et prénom" required="" type="text" class="form-control input-md">
               </div>
             </div>
+          </div>
 
-            <!-- Text input-->
-            <div class="row">
-              <div class="form-group">
-                <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 control-label" for="email">Sujet</label>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <input id="email" name="email" placeholder="Email" class="form-control input-md" type="text">
-                </div>
+          <!-- Email -->
+          <div class="row">
+            <div class="form-group">
+              <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 col-xs-12">
+                <label for="email">Adresse mail</label>
+                <input name="email" placeholder="Adresse mail" class="form-control input-md" type="text">
               </div>
             </div>
+          </div>
 
-            <!-- Textarea -->
-            <div class="row">
-              <div class="form-group">
-                <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 control-label" for="message">Message</label>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <textarea class="form-control" id="message" name="message"></textarea>
-                </div>
+          <!-- Sujet -->
+          <div class="row">
+            <div class="form-group">
+              <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 col-xs-12">
+                <label for="sujet">Sujet</label>
+                <input name="sujet" placeholder="Sujet" class="form-control input-md" type="text">
               </div>
             </div>
+          </div>
 
-            <!-- Button -->
-            <div class="row">
-              <div class="form-group btn-send">
-                <div class="offset-md-4 col-md-8">
-                  <button id="singlebutton" name="singlebutton" class="btn btn-success">Envoyer</button>
-                </div>
+          <!-- Message -->
+          <div class="row">
+            <div class="form-group">
+              <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 col-xs-12">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message"></textarea>
               </div>
             </div>
-          </fieldset>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-lg-8 offset-lg-2 btn-send">
+                <button id="singlebutton" name="singlebutton" class="btn btn-success">Envoyer</button>
+              </div>
+            </div>
+          </div>
         </form>
+
 
       </div>
 
@@ -468,6 +501,7 @@
 
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="asset/js/main.js"></script>
   </body>
 
 </html>

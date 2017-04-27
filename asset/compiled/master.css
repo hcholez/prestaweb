@@ -8782,119 +8782,134 @@ body {
     width: 100%;
     height: 500px; }
     /* line 14, asset/sass/_template.scss */
-    body .background .container {
+    body .background .override-shadow {
       height: 100%; }
       /* line 17, asset/sass/_template.scss */
-      body .background .container .logo {
+      body .background .override-shadow .logo {
         text-align: center;
         color: #FFFFFF;
         height: 80px; }
         /* line 22, asset/sass/_template.scss */
-        body .background .container .logo img {
+        body .background .override-shadow .logo img {
           height: 100%; }
-      /* line 28, asset/sass/_template.scss */
-      body .background .container .menu ul {
+      /* line 27, asset/sass/_template.scss */
+      body .background .override-shadow .menu-mobile {
+        display: none; }
+      /* line 32, asset/sass/_template.scss */
+      body .background .override-shadow .menu.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        z-index: 999; }
+        /* line 41, asset/sass/_template.scss */
+        body .background .override-shadow .menu.fixed li a {
+          color: #000000; }
+      /* line 47, asset/sass/_template.scss */
+      body .background .override-shadow .menu ul {
         float: right;
         padding: 20px;
         margin: 0; }
-        /* line 33, asset/sass/_template.scss */
-        body .background .container .menu ul li {
+        /* line 52, asset/sass/_template.scss */
+        body .background .override-shadow .menu ul li {
           display: inline-block;
           margin: 0 10px;
           font-size: 0.9rem;
           padding: 5px 0; }
-          /* line 39, asset/sass/_template.scss */
-          body .background .container .menu ul li:hover, body .background .container .menu ul li:focus, body .background .container .menu ul li.active {
+          /* line 58, asset/sass/_template.scss */
+          body .background .override-shadow .menu ul li:hover, body .background .override-shadow .menu ul li:focus, body .background .override-shadow .menu ul li.active {
             border-bottom: 3px solid #4aa3df; }
-          /* line 45, asset/sass/_template.scss */
-          body .background .container .menu ul li a {
+          /* line 64, asset/sass/_template.scss */
+          body .background .override-shadow .menu ul li a {
             text-transform: uppercase;
             color: #FFFFFF; }
-      /* line 53, asset/sass/_template.scss */
-      body .background .container .slogan {
-        padding-top: 140px; }
-        /* line 56, asset/sass/_template.scss */
-        body .background .container .slogan h1 {
-          text-transform: uppercase;
-          color: #FFFFFF;
-          text-align: center; }
-  /* line 69, asset/sass/_template.scss */
-  body .services {
-    margin-top: 30px;
-    margin-bottom: 30px; }
     /* line 73, asset/sass/_template.scss */
-    body .services h2 {
-      color: #2c3e50;
-      font-weight: bold;
-      font-size: 2rem;
-      text-align: center; }
-    /* line 82, asset/sass/_template.scss */
-    body .services .details:hover .more-detail {
-      background-color: #EFEFEF; }
-      /* line 85, asset/sass/_template.scss */
-      body .services .details:hover .more-detail .picto {
-        background-color: #4aa3df;
-        color: #FFFFFF; }
+    body .background .slogan {
+      padding-top: 140px; }
+      /* line 76, asset/sass/_template.scss */
+      body .background .slogan h1 {
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center; }
+  /* line 88, asset/sass/_template.scss */
+  body .services {
+    margin-top: 60px;
+    margin-bottom: 30px; }
     /* line 92, asset/sass/_template.scss */
-    body .services .details .more-detail {
-      padding: 15px;
-      background-color: #FFFFFF; }
-      /* line 96, asset/sass/_template.scss */
-      body .services .details .more-detail .picto {
-        border-radius: 50%;
-        height: 4em;
-        width: 4em;
-        line-height: 4em;
-        display: block;
-        text-align: center;
-        margin: -35px auto 10px auto;
-        background-color: #FFFFFF;
-        color: #4aa3df;
-        transition: all 0.3s ease-out;
-        display: table; }
-        /* line 109, asset/sass/_template.scss */
-        body .services .details .more-detail .picto i {
-          font-size: 2rem;
-          display: table-cell;
-          vertical-align: middle; }
-      /* line 116, asset/sass/_template.scss */
-      body .services .details .more-detail p {
-        font-size: 0.9rem; }
-      /* line 120, asset/sass/_template.scss */
-      body .services .details .more-detail a {
-        color: #4aa3df; }
-  /* line 131, asset/sass/_template.scss */
+    body .services h2 {
+      font-weight: bold;
+      font-size: 2.2rem;
+      text-align: center;
+      text-transform: uppercase; }
+    /* line 99, asset/sass/_template.scss */
+    body .services .details {
+      margin-bottom: 30px; }
+      /* line 103, asset/sass/_template.scss */
+      body .services .details:hover .more-detail {
+        background-color: #FFFFFF; }
+        /* line 106, asset/sass/_template.scss */
+        body .services .details:hover .more-detail .picto {
+          background-color: #4aa3df;
+          color: #FFFFFF; }
+      /* line 113, asset/sass/_template.scss */
+      body .services .details .more-detail {
+        padding: 15px;
+        background-color: #ecf0f1; }
+        /* line 117, asset/sass/_template.scss */
+        body .services .details .more-detail .picto {
+          border-radius: 50%;
+          height: 4em;
+          width: 4em;
+          line-height: 4em;
+          display: block;
+          text-align: center;
+          margin: -35px auto 10px auto;
+          background-color: #ecf0f1;
+          color: #4aa3df;
+          transition: all 0.3s ease-out;
+          display: table; }
+          /* line 130, asset/sass/_template.scss */
+          body .services .details .more-detail .picto i {
+            font-size: 2rem;
+            display: table-cell;
+            vertical-align: middle; }
+        /* line 137, asset/sass/_template.scss */
+        body .services .details .more-detail p {
+          font-size: 0.9rem; }
+        /* line 141, asset/sass/_template.scss */
+        body .services .details .more-detail a {
+          color: #4aa3df; }
+  /* line 152, asset/sass/_template.scss */
   body .competences {
     margin-top: 60px;
     margin-bottom: 60px;
     background-color: #FFFFFF; }
-    /* line 137, asset/sass/_template.scss */
+    /* line 158, asset/sass/_template.scss */
     body .competences .bar:nth-child(even) {
       padding-left: 0; }
-    /* line 141, asset/sass/_template.scss */
+    /* line 162, asset/sass/_template.scss */
     body .competences .bar:nth-child(odd) {
       padding-right: 0; }
-    /* line 146, asset/sass/_template.scss */
+    /* line 167, asset/sass/_template.scss */
     body .competences .progress-bar {
       display: block;
       position: relative;
       height: 45px;
-      margin-bottom: 10px;
-      margin-top: 0;
-      margin-left: 10px;
-      margin-right: 10px; }
-      /* line 155, asset/sass/_template.scss */
+      margin: 0 30px 30px 30px; }
+      /* line 173, asset/sass/_template.scss */
       body .competences .progress-bar h2 {
         padding: 0px;
         color: #FFFFFF;
         font-size: 0.9rem;
         line-height: 41px; }
-      /* line 162, asset/sass/_template.scss */
+      /* line 180, asset/sass/_template.scss */
       body .competences .progress-bar .title-progress {
         position: absolute;
         top: 0;
-        left: 10px; }
-    /* line 169, asset/sass/_template.scss */
+        left: 10px;
+        height: 100%; }
+    /* line 188, asset/sass/_template.scss */
     body .competences .progress {
       margin-bottom: 20px;
       overflow: hidden;
@@ -8904,11 +8919,11 @@ body {
       box-shadow: none;
       height: 40px;
       border-radius: 3px; }
-    /* line 180, asset/sass/_template.scss */
+    /* line 199, asset/sass/_template.scss */
     body .competences .progressbar {
       height: 41px;
       font-size: 0.9rem; }
-    /* line 185, asset/sass/_template.scss */
+    /* line 204, asset/sass/_template.scss */
     body .competences .progressbar {
       float: left;
       width: 0;
@@ -8921,7 +8936,7 @@ body {
       -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
       box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
       -webkit-transition: width; }
-      /* line 198, asset/sass/_template.scss */
+      /* line 217, asset/sass/_template.scss */
       body .competences .progressbar p {
         float: right;
         margin-right: 10px;
@@ -8929,31 +8944,31 @@ body {
         color: #FFFFFF;
         margin-bottom: 0;
         line-height: 41px; }
-    /* line 208, asset/sass/_template.scss */
+    /* line 227, asset/sass/_template.scss */
     body .competences .animated {
       -webkit-animation-duration: 1s;
       animation-duration: 0.5s;
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both; }
-  /* line 220, asset/sass/_template.scss */
+  /* line 239, asset/sass/_template.scss */
   body .equipe {
     margin-bottom: 60px; }
-    /* line 223, asset/sass/_template.scss */
+    /* line 242, asset/sass/_template.scss */
     body .equipe .items {
       margin-left: 15px;
       margin-right: 15px; }
-      /* line 227, asset/sass/_template.scss */
+      /* line 246, asset/sass/_template.scss */
       body .equipe .items .item {
         margin: 30px 0;
         text-align: center;
         overflow: hidden; }
-        /* line 234, asset/sass/_template.scss */
+        /* line 253, asset/sass/_template.scss */
         body .equipe .items .item:hover .image, body .equipe .items .item:focus .image {
           border-color: #4aa3df; }
-        /* line 239, asset/sass/_template.scss */
+        /* line 258, asset/sass/_template.scss */
         body .equipe .items .item:hover .social a, body .equipe .items .item:focus .social a {
           color: #4aa3df; }
-        /* line 245, asset/sass/_template.scss */
+        /* line 264, asset/sass/_template.scss */
         body .equipe .items .item .image {
           width: 15em;
           height: 15em;
@@ -8961,159 +8976,271 @@ body {
           overflow: hidden;
           border: 1px solid #EFEFEF;
           margin: 0 auto 20px auto; }
-          /* line 253, asset/sass/_template.scss */
+          /* line 272, asset/sass/_template.scss */
           body .equipe .items .item .image img {
             width: 100%;
             height: auto; }
-        /* line 259, asset/sass/_template.scss */
+        /* line 278, asset/sass/_template.scss */
         body .equipe .items .item .name {
           text-transform: uppercase;
           font-size: 0.9rem;
           font-weight: bold; }
-        /* line 265, asset/sass/_template.scss */
+        /* line 284, asset/sass/_template.scss */
         body .equipe .items .item .job {
           color: #8c9899;
           font-size: 0.9rem; }
-        /* line 271, asset/sass/_template.scss */
+        /* line 290, asset/sass/_template.scss */
         body .equipe .items .item .social a {
           color: #8c9899;
           padding: 5px;
           font-size: 1.1rem; }
-  /* line 285, asset/sass/_template.scss */
+  /* line 304, asset/sass/_template.scss */
   body .contact {
     margin-bottom: 60px; }
-    /* line 288, asset/sass/_template.scss */
+    /* line 307, asset/sass/_template.scss */
     body .contact p {
       font-effect: 0.9rem; }
-    /* line 293, asset/sass/_template.scss */
-    body .contact .form-group .control-label,
-    body .contact .form-group .form-control {
-      height: 40px; }
-    /* line 298, asset/sass/_template.scss */
-    body .contact .form-group #message {
-      height: 150px; }
-    /* line 302, asset/sass/_template.scss */
-    body .contact .form-group.btn-send {
-      text-align: right; }
-      /* line 305, asset/sass/_template.scss */
-      body .contact .form-group.btn-send .btn-success {
-        margin-bottom: 30px;
-        background-color: #3d566e;
-        border-color: #3d566e; }
-        /* line 310, asset/sass/_template.scss */
-        body .contact .form-group.btn-send .btn-success:hover, body .contact .form-group.btn-send .btn-success:focus {
+    /* line 312, asset/sass/_template.scss */
+    body .contact .formulaire label {
+      display: block;
+      width: 20%;
+      text-align: right;
+      float: left;
+      padding-right: 20px; }
+    /* line 320, asset/sass/_template.scss */
+    body .contact .formulaire .form-control {
+      float: right;
+      width: 80%; }
+    /* line 325, asset/sass/_template.scss */
+    body .contact .formulaire label,
+    body .contact .formulaire .form-control {
+      height: 40px;
+      line-height: 40px; }
+    /* line 331, asset/sass/_template.scss */
+    body .contact .formulaire #message {
+      height: 200px; }
+    /* line 335, asset/sass/_template.scss */
+    body .contact .formulaire .btn-send {
+      text-align: right;
+      padding-bottom: 30px;
+      padding-top: 20px; }
+      /* line 340, asset/sass/_template.scss */
+      body .contact .formulaire .btn-send .btn-success {
+        background-color: #2c3e50;
+        border-color: #2c3e50; }
+        /* line 344, asset/sass/_template.scss */
+        body .contact .formulaire .btn-send .btn-success:hover, body .contact .formulaire .btn-send .btn-success:focus {
           background-color: #4aa3df;
           border-color: #4aa3df; }
-  /* line 325, asset/sass/_template.scss */
+  /* line 360, asset/sass/_template.scss */
   body footer {
     background-color: #3d566e;
     color: #cbd0d3;
     padding-top: 20px; }
-    /* line 330, asset/sass/_template.scss */
+    /* line 365, asset/sass/_template.scss */
     body footer hr {
       border-top: 2px solid #FFFFFF;
       margin: 10px 0; }
-    /* line 335, asset/sass/_template.scss */
+    /* line 370, asset/sass/_template.scss */
     body footer h5 {
       color: #FFFFFF; }
-    /* line 339, asset/sass/_template.scss */
+    /* line 374, asset/sass/_template.scss */
     body footer .footer-entrie {
       font-size: 0.9rem; }
-      /* line 342, asset/sass/_template.scss */
+      /* line 377, asset/sass/_template.scss */
       body footer .footer-entrie .list-link {
         padding-left: 0; }
-        /* line 345, asset/sass/_template.scss */
+        /* line 380, asset/sass/_template.scss */
         body footer .footer-entrie .list-link a {
           color: #cbd0d3; }
-      /* line 352, asset/sass/_template.scss */
+      /* line 387, asset/sass/_template.scss */
       body footer .footer-entrie .phone a,
       body footer .footer-entrie .mail a {
         color: #cbd0d3;
         margin-left: 5px; }
-      /* line 359, asset/sass/_template.scss */
+      /* line 394, asset/sass/_template.scss */
       body footer .footer-entrie .address span {
         margin-left: 5px; }
-    /* line 366, asset/sass/_template.scss */
+    /* line 401, asset/sass/_template.scss */
     body footer .network input {
       border: 1px solid #2c3e50;
       background-color: #2c3e50;
       color: #FFFFFF;
       padding: 5px 0 5px 10px;
       width: 75%; }
-    /* line 374, asset/sass/_template.scss */
+    /* line 409, asset/sass/_template.scss */
     body footer .network .send {
       border: 0 none;
       padding: 5px;
       background-color: #4aa3df;
       color: #FFFFFF;
       width: 25%; }
-    /* line 382, asset/sass/_template.scss */
+    /* line 417, asset/sass/_template.scss */
     body footer .network .list-network {
       padding-left: 0;
       margin-top: 20px; }
-      /* line 386, asset/sass/_template.scss */
+      /* line 421, asset/sass/_template.scss */
       body footer .network .list-network li {
         display: inline-block;
         margin: 0 5px;
         font-size: 2rem; }
-        /* line 391, asset/sass/_template.scss */
+        /* line 426, asset/sass/_template.scss */
         body footer .network .list-network li a {
           color: #FFFFFF; }
-    /* line 398, asset/sass/_template.scss */
+    /* line 433, asset/sass/_template.scss */
     body footer.copyright {
       background-color: #2c3e50;
       text-align: center;
       color: #cbd0d3;
       padding: 10px;
       font-size: 0.8rem; }
-      /* line 405, asset/sass/_template.scss */
+      /* line 440, asset/sass/_template.scss */
       body footer.copyright p {
         margin: 0; }
 
 /*
 * COMMUN
 */
-/* line 420, asset/sass/_template.scss */
-.equipe .description,
-.contact .description,
-.services .description,
-.competences .description {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  text-align: center; }
+/* line 451, asset/sass/_template.scss */
+.equipe,
+.contact,
+.services,
+.competences {
+  padding: 30px; }
+  /* line 457, asset/sass/_template.scss */
+  .equipe .description,
+  .contact .description,
+  .services .description,
+  .competences .description {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center; }
+  /* line 463, asset/sass/_template.scss */
+  .equipe h2,
+  .contact h2,
+  .services h2,
+  .competences h2 {
+    color: #3d566e;
+    text-align: center;
+    padding: 30px 0; }
 
-/* line 426, asset/sass/_template.scss */
-.equipe h2,
-.contact h2,
-.services h2,
-.competences h2 {
-  color: #3d566e;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 769px) {
   /* line 3, asset/sass/_responsive.scss */
   .container {
-    width: 95%; }
-  /* line 10, asset/sass/_responsive.scss */
+    width: 100%; }
+  /* line 8, asset/sass/_responsive.scss */
+  body .equipe {
+    padding-left: 20px;
+    padding-right: 20px; }
+    /* line 12, asset/sass/_responsive.scss */
+    body .equipe .items {
+      margin: 0 !important; }
+      /* line 15, asset/sass/_responsive.scss */
+      body .equipe .items .item {
+        padding: 0 !important; }
+        /* line 18, asset/sass/_responsive.scss */
+        body .equipe .items .item .image {
+          width: 100% !important; }
+  /* line 27, asset/sass/_responsive.scss */
+  body .contact .formulaire label,
+  body .contact .formulaire input {
+    width: 100% !important; }
+  /* line 32, asset/sass/_responsive.scss */
+  body .contact .formulaire label {
+    text-align: center !important;
+    padding: 0 !important; }
+  /* line 37, asset/sass/_responsive.scss */
+  body .contact .formulaire #message {
+    width: 100%; }
+  /* line 43, asset/sass/_responsive.scss */
+  body .background {
+    height: 400px !important; }
+    /* line 46, asset/sass/_responsive.scss */
+    body .background .slogan {
+      padding-top: 110px !important; }
+  /* line 53, asset/sass/_responsive.scss */
   body .competences .description p {
     padding: 10px; }
-  /* line 16, asset/sass/_responsive.scss */
+  /* line 58, asset/sass/_responsive.scss */
+  body .competences .progress-bar {
+    margin: 0 0 30px 0 !important; }
+    /* line 62, asset/sass/_responsive.scss */
+    body .competences .progress-bar .title-progress h2 {
+      font-size: 0.6rem !important;
+      line-height: 36px !important; }
+    /* line 69, asset/sass/_responsive.scss */
+    body .competences .progress-bar .progressbar p {
+      font-size: 0.6rem;
+      line-height: 36px !important; }
+  /* line 77, asset/sass/_responsive.scss */
   body .competences .bar:nth-child(odd) {
     padding-right: 15px; }
-  /* line 20, asset/sass/_responsive.scss */
+  /* line 81, asset/sass/_responsive.scss */
   body .competences .bar:nth-child(even) {
     padding-left: 15px; }
-  /* line 27, asset/sass/_responsive.scss */
+  /* line 88, asset/sass/_responsive.scss */
   body .services .details {
     margin: 50px 0; }
-  /* line 34, asset/sass/_responsive.scss */
+  /* line 95, asset/sass/_responsive.scss */
   body footer .network input {
     width: 100%; }
-  /* line 38, asset/sass/_responsive.scss */
+  /* line 99, asset/sass/_responsive.scss */
   body footer .network .send {
-    width: 100%; } }
+    width: 100%; }
+  /* line 105, asset/sass/_responsive.scss */
+  body .menu-mobile {
+    display: block !important;
+    text-align: center; }
+    /* line 109, asset/sass/_responsive.scss */
+    body .menu-mobile.fixed {
+      position: fixed;
+      left: 0;
+      right: 0;
+      background-color: #FFFFFF;
+      z-index: 999; }
+      /* line 116, asset/sass/_responsive.scss */
+      body .menu-mobile.fixed .burger-menu {
+        color: #3d566e !important; }
+    /* line 121, asset/sass/_responsive.scss */
+    body .menu-mobile .logo {
+      height: 60px !important;
+      position: relative; }
+      /* line 125, asset/sass/_responsive.scss */
+      body .menu-mobile .logo .burger-menu {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFFFFF;
+        background-color: transparent;
+        border: 0 none;
+        font-size: 1.5rem; }
+      /* line 136, asset/sass/_responsive.scss */
+      body .menu-mobile .logo .link-menu {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        right: 0;
+        background-color: #3d566e;
+        display: none; }
+        /* line 145, asset/sass/_responsive.scss */
+        body .menu-mobile .logo .link-menu ul {
+          padding-left: 0;
+          margin-bottom: 0; }
+          /* line 149, asset/sass/_responsive.scss */
+          body .menu-mobile .logo .link-menu ul li {
+            padding: 10px;
+            border-bottom: 1px solid #4aa3df; }
+            /* line 153, asset/sass/_responsive.scss */
+            body .menu-mobile .logo .link-menu ul li a {
+              color: #FFFFFF; }
+  /* line 162, asset/sass/_responsive.scss */
+  body .menu {
+    display: none; }
+  /* line 166, asset/sass/_responsive.scss */
+  body h2 {
+    font-size: 2rem !important; } }
 
 /* line 1, asset/sass/base.scss */
 body {
